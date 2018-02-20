@@ -1,7 +1,11 @@
-﻿@{
+﻿@model WebApplication1.Models.AboutModel
+@{
     ViewData["Title"] = "About";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
 <p>Use this area to provide additional information.</p>
+<!-- <div>Location: @ViewData["Location"]</div> -->
+<div>Name: @Model.Name</div>
+<div>Location: @Model.Location</div>

@@ -17,9 +17,13 @@ namespace WebApplication1.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            //ViewData["Message"] = "Your application description page.";
+            //ViewData["Location"] = "Strood, Rochester, Kent";
+            var model = new AboutModel();
+            model.Name = "Julija Maliseva";
+            model.Location = "Strood, Rochester, Kent";
 
-            return View();
+            return View(model);
         }
 
         public IActionResult Contact()
